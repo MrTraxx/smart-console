@@ -16,12 +16,11 @@ while True:
         print("To quit write 'quit'")
         while True:
             equation = input("Enter your calculation:")
-            # check what the user inputs and calculate accordingly
+            # check what the user inputs and calculate the input
             if equation == "quit":
                 break
             try:
                 result = eval(equation)
-                # Apply clip function to the result
                 print(result)
             except:
                 print("Invalid input")
